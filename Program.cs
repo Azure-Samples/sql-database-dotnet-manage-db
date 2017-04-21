@@ -2,8 +2,8 @@
 // Licensed under the MIT License. See License.txt in the project root for license information.
 
 using Microsoft.Azure.Management.Fluent;
-using Microsoft.Azure.Management.Resource.Fluent;
-using Microsoft.Azure.Management.Resource.Fluent.Core;
+using Microsoft.Azure.Management.ResourceManager.Fluent;
+using Microsoft.Azure.Management.ResourceManager.Fluent.Core;
 using Microsoft.Azure.Management.Samples.Common;
 using Microsoft.Azure.Management.Sql.Fluent.Models;
 using System;
@@ -14,9 +14,9 @@ namespace ManageSqlDatabase
     {
         private static readonly string AdministratorLogin = "sqladmin3423";
         private static readonly string AdministratorPassword = "myS3cureP@ssword";
-        private static readonly string FirewallRuleIpAddress = "10.0.0.1";
-        private static readonly string FirewallRuleStartIpAddress = "10.2.0.1";
-        private static readonly string FirewallRuleEndIpAddress = "10.2.0.10";
+        private static readonly string FirewallRuleIPAddress = "10.0.0.1";
+        private static readonly string FirewallRuleStartIPAddress = "10.2.0.1";
+        private static readonly string FirewallRuleEndIPAddress = "10.2.0.10";
         private static readonly string DatabaseName = "mydatabase";
 
         /**
@@ -43,8 +43,8 @@ namespace ManageSqlDatabase
                         .WithNewResourceGroup(rgName)
                         .WithAdministratorLogin(AdministratorLogin)
                         .WithAdministratorPassword(AdministratorPassword)
-                        .WithNewFirewallRule(FirewallRuleIpAddress)
-                        .WithNewFirewallRule(FirewallRuleStartIpAddress, FirewallRuleEndIpAddress)
+                        .WithNewFirewallRule(FirewallRuleIPAddress)
+                        .WithNewFirewallRule(FirewallRuleStartIPAddress, FirewallRuleEndIPAddress)
                         .Create();
 
                 Utilities.PrintSqlServer(sqlServer);
@@ -86,7 +86,7 @@ namespace ManageSqlDatabase
                 // Add new firewall rules.
                 Utilities.Log("Creating a firewall rule for SQL Server");
                 var newFirewallRule = sqlServer.FirewallRules.Define("myFirewallRule")
-                        .WithIpAddress("10.10.10.10")
+                        .WithIPAddress("10.10.10.10")
                         .Create();
 
                 Utilities.PrintFirewallRule(newFirewallRule);
@@ -123,7 +123,7 @@ namespace ManageSqlDatabase
 
                 var azure = Azure
                     .Configure()
-                    .WithLogLevel(HttpLoggingDelegatingHandler.Level.BASIC)
+                    .WithLogLevel(HttpLoggingDelegatingHandler.Level.Basic)
                     .Authenticate(credentials)
                     .WithDefaultSubscription();
 
