@@ -4,7 +4,7 @@ platforms: .Net
 author: anudeepsharma
 ---
 
-#Getting Started with Sql - Manage Sql Database - in .Net #
+# Getting Started with Sql - Manage Sql Database - in .Net #
 
           Azure Storage sample for managing SQL Database -
            - Create a SQL Server along with 2 firewalls.
