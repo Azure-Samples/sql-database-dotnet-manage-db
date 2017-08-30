@@ -1,0 +1,4 @@
+C:\Sources\dotnet-samples\sql-database-dotnet-manage-db\bin\Debug\net452\ManageSqlDatabase.runtimeconfig.json
+C:\Sources\dotnet-samples\sql-database-dotnet-manage-db\bin\Debug\net452\ManageSqlDatabase.runtimeconfig.dev.json
+C:\Sources\dotnet-samples\sql-database-dotnet-manage-db\obj\Debug\net452\ManageSqlDatabase.csproj.ManageSqlDatabase.exe.config
+C:\Sources\dotnet-samples\sql-database-dotnet-manage-db\obj\Debug\net452\ManageSqlDatabase.csproj.CoreCompileInputs.cache

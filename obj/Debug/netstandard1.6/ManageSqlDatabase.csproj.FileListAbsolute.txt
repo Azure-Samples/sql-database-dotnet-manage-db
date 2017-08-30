@@ -1,0 +1,2 @@
+C:\Sources\dotnet-samples\sql-database-dotnet-manage-db\bin\Debug\netstandard1.6\ManageSqlDatabase.deps.json
+C:\Sources\dotnet-samples\sql-database-dotnet-manage-db\obj\Debug\netstandard1.6\ManageSqlDatabase.csproj.CoreCompileInputs.cache
