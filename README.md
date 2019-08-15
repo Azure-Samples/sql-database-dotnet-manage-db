@@ -4,20 +4,20 @@ languages:
 - csharp
 products:
 - azure
-services: Sql
-platforms: dotnet
-author: yaohaizh
+extensions:
+- services: Sql
+- platforms: dotnet
 ---
 
 # Getting started on managing SQL databases in C# #
 
-          Azure Storage sample for managing SQL Database -
-           - Create a SQL Server along with 2 firewalls.
-           - Create a database in SQL server
-           - Change performance level (SKU) of SQL Database
-           - List and delete firewalls.
-           - Create another firewall in the SQlServer
-           - Delete database, firewall and SQL Server
+ Azure Storage sample for managing SQL Database -
+  - Create a SQL Server along with 2 firewalls.
+  - Create a database in SQL server
+  - Change performance level (SKU) of SQL Database
+  - List and delete firewalls.
+  - Create another firewall in the SQlServer
+  - Delete database, firewall and SQL Server
 
 
 ## Running this Sample ##
